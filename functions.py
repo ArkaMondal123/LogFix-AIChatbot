@@ -5,7 +5,6 @@ import pymongo
 import random
 import numpy as np
 
-password = "martian.bot"
 client = pymongo.MongoClient(f"mongodb+srv://Martianbot:{password}@clustermartianbot.erq2f.mongodb.net/logfix?retryWrites=true&w=majority")
 db = client['logfix']
 
@@ -43,7 +42,7 @@ def email_log(query, semail):
     smtp_server = "smtp.office365.com"
     sender_email = "querysolverlogfix@outlook.com"
     receiver_email = "logfix076@gmail.com"
-    password = "logfix#1234"
+    password = ""
     message = f"""\n\n
     Query from {semail}
 
