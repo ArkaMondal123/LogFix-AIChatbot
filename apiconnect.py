@@ -10,7 +10,7 @@ import pymongo
 from functions import remove_unique_key, email_log
 from chatbot import chatbot
 
-password = "martian.bot"
+
 client = pymongo.MongoClient(f"mongodb+srv://Martianbot:{password}@clustermartianbot.erq2f.mongodb.net/logfix?retryWrites=true&w=majority")
 db = client['logfix']
 collection = db["solved"]
