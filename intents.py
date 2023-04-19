@@ -1,6 +1,5 @@
 import pymongo
 
-password = "martian.bot"
 client = pymongo.MongoClient(f"mongodb+srv://Martianbot:{password}@clustermartianbot.erq2f.mongodb.net/logfix?retryWrites=true&w=majority")
 db = client['logfix']
 solved = db["solved"]
